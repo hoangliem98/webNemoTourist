@@ -66,7 +66,7 @@ class TourCateController extends Controller
 	public function getXoa($id)
 	{
 		$tour = Tours::all();
-        foreach ($tours as $t) {
+        foreach ($tour as $t) {
             if($t != null && $t->tourcate_id == $id)
                 $t->delete();
         }
